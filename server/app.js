@@ -13,7 +13,8 @@ app.use('/api/v1/portfolio',portfolioRoutes)
 
 app.use(
   cors({
-    origin:process.env.ORIGIN    ,
+    // origin:process.env.ORIGIN    ,
+    origin: "https://ghatkoper-mysha-client.onrender.com",
     credentials: true, 
     methods: ["GET", "POST", "PUT", "DELETE"], 
 
