@@ -1,6 +1,6 @@
 import asyncHandler  from '../Utils/AsyncHandler.js'
-import ApiError from '../utils/ApiError.js'
-import ApiSuccess from '../utils/ApiSuccess.js'
+import ApiError from '../Utils/ApiError.js'
+import ApiSuccess from '../Utils/ApiSuccess.js'
 import User from '../Models/User.Model.js'
 import fileUpload from "../Utils/FileUpload.js";
 import dayjs from 'dayjs';
@@ -125,40 +125,6 @@ const LoginController = asyncHandler(async (req, res) => {
     );
 });
 
-// const userInfoController = asyncHandler(async (req, res) => {
-
-//   const { id } = req.user
-//   if (!id) {
-//     throw new ApiError(400, "User was not Found")
-//   }
-//   const findUser = await User.findById(id)
-//   if (!findUser) {
-//     throw new ApiError(400, "User was not Found")
-//   }
-
-  
-
-//   return res
-//     .status(200)
-//     .json(
-//       new ApiSuccess(
-//         200,
-//         {
-//           id: findUser.id,
-//           email:findUser.email,
-//           profileSerup:findUser.profileSerup,
-//           firstName:findUser.firstName,
-//           lastName:findUser.lastName,
-          
-//         },
-//         {
-//           findUser
-//         },
-//         "User Find Succesfully"
-//       )
-//     ) 
-
-// })
 
 const userInfoController = asyncHandler(async (req, res) => {
   const { id } = req.user;
