@@ -1,6 +1,4 @@
 import { Router} from "express"
-
-// import { getPortfolioData} from '../Controllers/portfolio.controller.js'
 import {getPortfolioData} from '../Controllers/Portfolio.Controller.js'
 
 const router = Router()

@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from "./Route/Auth.route.js";
-// import portfolioRoutes from './Routes/portfolio.route.js'
 import portfolioRoutes from "./Route/Portfolio.Route.js"
 
 const app = express()
